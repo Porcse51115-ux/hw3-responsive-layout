@@ -1,0 +1,103 @@
+<svg viewBox="0 0 1400 800" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1400" height="800" fill="#ffffff"/>
+
+  <text x="30" y="35" font-size="24" font-weight="bold" fill="#111">Matt Sheaffer — Portfolio Site Wireframe</text>
+
+  <!-- ===================== PAGE 1: HOME ===================== -->
+  <g transform="translate(30,60)">
+    <text x="0" y="0" font-size="16" font-weight="bold" fill="#333">1. Home (index.html)</text>
+    <rect x="0" y="15" width="400" height="580" fill="none" stroke="#333" stroke-width="2"/>
+    <!-- header -->
+    <rect x="10" y="25" width="380" height="50" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="55" font-size="12" text-anchor="middle" fill="#555">HEADER: Name + tagline</text>
+    <!-- nav -->
+    <rect x="10" y="80" width="380" height="35" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="102" font-size="12" text-anchor="middle" fill="#555">NAV: Home | Projects | About/Contact</text>
+    <!-- hero -->
+    <rect x="10" y="120" width="380" height="150" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="180" font-size="12" text-anchor="middle" fill="#555">MAIN &gt; SECTION: Hero</text>
+    <text x="200" y="200" font-size="11" text-anchor="middle" fill="#777">h1 headline + intro paragraph</text>
+    <!-- highlights section -->
+    <rect x="10" y="275" width="380" height="150" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="335" font-size="12" text-anchor="middle" fill="#555">SECTION: Featured Work</text>
+    <text x="200" y="355" font-size="11" text-anchor="middle" fill="#777">h2 + 3 short project teasers (h3 each)</text>
+    <!-- about teaser -->
+    <rect x="10" y="430" width="380" height="100" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="475" font-size="12" text-anchor="middle" fill="#555">SECTION: Quick About Teaser</text>
+    <text x="200" y="495" font-size="11" text-anchor="middle" fill="#777">h2 + short bio + link to About page</text>
+    <!-- footer -->
+    <rect x="10" y="540" width="380" height="45" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="567" font-size="12" text-anchor="middle" fill="#555">FOOTER: contact links, copyright</text>
+  </g>
+
+  <!-- ===================== PAGE 2: PROJECTS ===================== -->
+  <g transform="translate(500,60)">
+    <text x="0" y="0" font-size="16" font-weight="bold" fill="#333">2. Projects/Work (projects.html)</text>
+    <rect x="0" y="15" width="400" height="580" fill="none" stroke="#333" stroke-width="2"/>
+    <rect x="10" y="25" width="380" height="50" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="55" font-size="12" text-anchor="middle" fill="#555">HEADER: Name + tagline</text>
+    <rect x="10" y="80" width="380" height="35" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="102" font-size="12" text-anchor="middle" fill="#555">NAV: Home | Projects | About/Contact</text>
+    <rect x="10" y="120" width="380" height="40" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="145" font-size="12" text-anchor="middle" fill="#555">MAIN &gt; h1: "Projects"</text>
+    <!-- project article 1 -->
+    <rect x="10" y="165" width="380" height="130" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="215" font-size="12" text-anchor="middle" fill="#555">ARTICLE: TruckOps AI</text>
+    <text x="200" y="235" font-size="11" text-anchor="middle" fill="#777">h3 title + description + tech list (ul)</text>
+    <!-- project article 2 -->
+    <rect x="10" y="300" width="380" height="130" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="350" font-size="12" text-anchor="middle" fill="#555">ARTICLE: CrimeCast Studio</text>
+    <text x="200" y="370" font-size="11" text-anchor="middle" fill="#777">h3 title + description + tech list (ul)</text>
+    <!-- project article 3 -->
+    <rect x="10" y="435" width="380" height="100" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="480" font-size="12" text-anchor="middle" fill="#555">ARTICLE: Voss Studio</text>
+    <text x="200" y="500" font-size="11" text-anchor="middle" fill="#777">h3 title + description</text>
+    <rect x="10" y="540" width="380" height="45" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="567" font-size="12" text-anchor="middle" fill="#555">FOOTER: contact links, copyright</text>
+  </g>
+
+  <!-- ===================== PAGE 3: ABOUT/CONTACT ===================== -->
+  <g transform="translate(970,60)">
+    <text x="0" y="0" font-size="16" font-weight="bold" fill="#333">3. About/Contact (about.html)</text>
+    <rect x="0" y="15" width="400" height="580" fill="none" stroke="#333" stroke-width="2"/>
+    <rect x="10" y="25" width="380" height="50" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="55" font-size="12" text-anchor="middle" fill="#555">HEADER: Name + tagline</text>
+    <rect x="10" y="80" width="380" height="35" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="102" font-size="12" text-anchor="middle" fill="#555">NAV: Home | Projects | About/Contact</text>
+    <!-- bio section -->
+    <rect x="10" y="120" width="380" height="170" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="180" font-size="12" text-anchor="middle" fill="#555">SECTION: Bio</text>
+    <text x="200" y="200" font-size="11" text-anchor="middle" fill="#777">h1 "About Me" + h2 background</text>
+    <text x="200" y="216" font-size="11" text-anchor="middle" fill="#777">trucking-to-tech story paragraph</text>
+    <!-- skills section -->
+    <rect x="10" y="300" width="380" height="130" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="350" font-size="12" text-anchor="middle" fill="#555">SECTION: Skills</text>
+    <text x="200" y="370" font-size="11" text-anchor="middle" fill="#777">h2 + skills list (ul)</text>
+    <!-- contact section -->
+    <rect x="10" y="440" width="380" height="95" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="480" font-size="12" text-anchor="middle" fill="#555">SECTION: Contact</text>
+    <text x="200" y="500" font-size="11" text-anchor="middle" fill="#777">h2 + email/GitHub links</text>
+    <rect x="10" y="540" width="380" height="45" fill="none" stroke="#888" stroke-dasharray="4"/>
+    <text x="200" y="567" font-size="12" text-anchor="middle" fill="#555">FOOTER: contact links, copyright</text>
+  </g>
+
+  <!-- ===================== ANNOTATIONS: COLOR + FONT ===================== -->
+  <g transform="translate(30,660)">
+    <text x="0" y="0" font-size="16" font-weight="bold" fill="#333">Intended Color Palette</text>
+    <rect x="0" y="15" width="40" height="40" fill="#0B1F33" stroke="#333"/>
+    <text x="45" y="40" font-size="12" fill="#333">Deep Navy #0B1F33 — headers, footer, primary text</text>
+
+    <rect x="0" y="65" width="40" height="40" fill="#E8A33D" stroke="#333"/>
+    <text x="45" y="90" font-size="12" fill="#333">Amber #E8A33D — accents, links, buttons (nod to trucking/industrial)</text>
+
+    <rect x="0" y="115" width="40" height="40" fill="#F5F5F0" stroke="#333"/>
+    <text x="45" y="140" font-size="12" fill="#333">Off-White #F5F5F0 — page background</text>
+  </g>
+
+  <g transform="translate(750,660)">
+    <text x="0" y="0" font-size="16" font-weight="bold" fill="#333">Intended Font Choices</text>
+    <text x="0" y="30" font-size="20" font-weight="800" fill="#0B1F33">Montserrat (headings, h1-h3)</text>
+    <text x="0" y="65" font-size="16" fill="#333">Inter (body text, nav, lists)</text>
+    <text x="0" y="100" font-size="12" fill="#777">Bold, industrial heading font paired with a clean readable body font.</text>
+  </g>
+</svg>
