@@ -1,0 +1,196 @@
+/* =========================================================
+   Matt Sheaffer — Portfolio Site
+   Palette (from wireframe.svg):
+     Navy #0B1F33 — headers, footer, primary text
+     Amber #E8A33D — accents, links, buttons
+     Off-white #F5F5F0 — page background
+   Fonts: Montserrat (headings), Inter (body)
+   Mobile-first: base styles target ~320px, then widen
+   at 768px (tablet) and 1200px (desktop).
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background-color: #f5f5f0;
+    color: #1b1b1b;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+    color: #0b1f33;
+}
+
+a {
+    color: #b5651d;
+}
+
+a:hover {
+    color: #e8a33d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- Header / Footer ---------- */
+header {
+    background-color: #0b1f33;
+    color: #f5f5f0;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    font-size: 1.6em;
+}
+
+header p {
+    margin: 0;
+    color: #e8a33d;
+    font-style: italic;
+}
+
+footer {
+    background-color: #0b1f33;
+    color: #f5f5f0;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* ---------- Nav: Flexbox, stacked on mobile ---------- */
+nav {
+    background-color: #e8a33d;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    padding: 12px 20px;
+    color: #0b1f33;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(11, 31, 51, 0.15);
+}
+
+nav a:hover {
+    background-color: #0b1f33;
+    color: #ffffff;
+}
+
+/* ---------- Main content ---------- */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #e0dcd2;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* ---------- Card grid (Featured Work / Projects) ----------
+   Mobile: single column (Grid with one implicit column) */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card-grid article {
+    background-color: #ffffff;
+    border: 1px solid #e0dcd2;
+    border-left: 4px solid #e8a33d;
+    border-radius: 6px;
+    padding: 18px 20px;
+}
+
+.card-grid article h3 {
+    margin-top: 0;
+}
+
+/* ---------- About page grid ---------- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.about-grid section {
+    margin-bottom: 0;
+}
+
+/* =========================================================
+   BREAKPOINT 1: Tablet (768px and up)
+   - Nav goes horizontal
+   - Card grid becomes 2 columns
+   - About grid: bio spans full width, skills/contact split
+   ========================================================= */
+@media (min-width: 768px) {
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        border-bottom: none;
+        border-right: 1px solid rgba(11, 31, 51, 0.15);
+    }
+
+    nav li:last-child a {
+        border-right: none;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-bio {
+        grid-column: 1 / -1;
+    }
+}
+
+/* =========================================================
+   BREAKPOINT 2: Desktop (1200px and up)
+   - Card grid becomes 3 columns
+   - Slightly larger type, more breathing room
+   ========================================================= */
+@media (min-width: 1200px) {
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
