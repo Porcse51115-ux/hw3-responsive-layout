@@ -58,8 +58,37 @@
                 <h2>Contact</h2>
                 <p>
                     Find my work on <a href="https://github.com/Porcse51115-ux">GitHub</a>
-                    or reach out directly by email.
+                    or use the form below to get in touch.
                 </p>
+
+                <form id="contact-form" novalidate>
+                    <fieldset>
+                        <legend>Send a Message</legend>
+
+                        <div class="form-group">
+                            <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
+                            <input type="text" id="name" name="name" required
+                                   aria-required="true" aria-describedby="name-error">
+                            <span id="name-error" class="error-msg" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" required
+                                   aria-required="true" aria-describedby="email-error">
+                            <span id="email-error" class="error-msg" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+                            <textarea id="message" name="message" rows="5" required
+                                      aria-required="true" aria-describedby="message-error"></textarea>
+                            <span id="message-error" class="error-msg" role="alert"></span>
+                        </div>
+
+                        <button type="submit">Send</button>
+                    </fieldset>
+                </form>
             </section>
         </div>
 
@@ -68,6 +97,42 @@
     <footer>
         <p>&copy; 2026 Matt Sheaffer. Built for a web development assignment.</p>
     </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var valid = true;
+            var fields = [
+                { id: 'name',    msg: 'Please enter your name.' },
+                { id: 'email',   msg: 'Please enter a valid email address.' },
+                { id: 'message', msg: 'Please enter a message.' }
+            ];
+
+            fields.forEach(function(f) {
+                var input = document.getElementById(f.id);
+                var error = document.getElementById(f.id + '-error');
+                var value = input.value.trim();
+                var isEmpty = value === '';
+                var badEmail = f.id === 'email' && !isEmpty && value.indexOf('@') === -1;
+
+                if (isEmpty || badEmail) {
+                    error.textContent = f.msg;
+                    input.setAttribute('aria-invalid', 'true');
+                    input.classList.add('input-error');
+                    valid = false;
+                } else {
+                    error.textContent = '';
+                    input.removeAttribute('aria-invalid');
+                    input.classList.remove('input-error');
+                }
+            });
+
+            if (valid) {
+                alert('Thanks for reaching out! (This form is a demo for a class assignment.)');
+                this.reset();
+            }
+        });
+    </script>
 
 </body>
 </html>

@@ -187,6 +187,11 @@ section {
     .about-bio {
         grid-column: 1 / -1;
     }
+
+    /* Contact section spans full width on tablet so the form isn't cramped */
+    .about-grid section:last-child {
+        grid-column: 1 / -1;
+    }
 }
 
 /* =========================================================
@@ -205,4 +210,92 @@ section {
     .card-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* ---------- Contact form ---------- */
+fieldset {
+    border: 2px solid #e0dcd2;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 16px 0 0 0;
+}
+
+legend {
+    font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    color: #0b1f33;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: #0b1f33;
+}
+
+.required {
+    color: #c0392b;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #e0dcd2;
+    border-radius: 4px;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 1em;
+    color: #1b1b1b;
+    background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid #e8a33d;
+    outline-offset: 1px;
+    border-color: #e8a33d;
+}
+
+/* Accessible error state */
+.input-error {
+    border-color: #c0392b;
+}
+
+.input-error:focus {
+    outline-color: #c0392b;
+}
+
+.error-msg {
+    display: block;
+    min-height: 1.2em;
+    color: #c0392b;
+    font-size: 0.875em;
+    margin-top: 4px;
+}
+
+button[type="submit"] {
+    background-color: #0b1f33;
+    color: #ffffff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e8a33d;
+    color: #0b1f33;
+}
+
+button[type="submit"]:focus {
+    outline: 2px solid #e8a33d;
+    outline-offset: 2px;
 }
